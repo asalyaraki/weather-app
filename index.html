@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/stylesheets/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/icon/css/fontello.css">
+</head>
+
+<body>
+    <main class="w-[100%] h-[100vh] bg-gray-100 flex justify-center items-center font-primary">
+        <section class="w-[30%] h-[90%] rounded-[30px] shadow-2xl bg-gray-100 *:bg-transparent">
+            <div class="w-full h-[15%] flex">
+                <div class="h-full w-[40%] flex justify-center items-center bg-transparent">
+                    <span id="location_btn"
+                        class="material-symbols-outlined w-[60px] h-[35px] scale-[1.4] px-4 py-1 rounded-xl shadow-md shadow-black bg-transparent cursor-pointer">
+                        my_location
+                    </span>
+                </div>
+                <div class="h-full w-[60%] flex justify-center items-center">
+                    <h2 id="locAcc" class="text-[25px]">Location Access</h2>
+                </div>
+            </div>
+            <div class="w-full h-[15%] flex justify-center items-center">
+                <div id="mood"
+                    class="w-[50%] h-[70%] rounded-full flex items-center px-2 bg-yellow-200 shadow-lg cursor-pointer">
+                    <div
+                        class="w-[50px] h-[50px] rounded-full bg-yellow-400 flex justify-center items-center cursor-pointer">
+                        <i class="icon-sun-filled text-white scale-[1.5]"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[45%] flex justify-center items-center">
+                <div id="circle"
+                    class="w-[220px] h-[220px] rounded-full bg-transparent flex justify-center items-center relative shadow-md">
+                    <div
+                        class="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-10 h-[100px] pt-9">
+                        <span class="material-symbols-outlined scale-[2.5] px-4 text-blue-500">
+                            device_thermostat
+                        </span>
+                        <h3 id="temp" class="text-[40px] px-1 text-blue-500"></h3>
+                    </div>
+                    <div
+                        class="w-[190px] h-[190px] border-[10px] border-dashed border-blue-500 rounded-full bg-transparent anime1">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-[25%] flex justify-center items-center">
+                <div id="weatherInfo" class="w-[90%] h-[80%] rounded-2xl flex shadow-sm">
+                    <div class="w-1/2 h-full">
+                        <h2 id="ctName" class="text-[30px] text-center"></h2>
+                        <h4 id="date" class="text-[14px] text-center pt-2"></h4>
+                        <h4 id="time" class="text-[16px] text-center pt-3"></h4>
+                    </div>
+                    <div class="w-1/2 h-full">
+                        <div class="w-full h-[30%] items-center flex">
+                            <!-- cloud  -->
+                            <i class="icon-cloud-1 scale-[2] text-blue-300 anime3 cloud hidden"></i>
+                            <i class="icon-cloud scale-[2] text-blue-300 anime4 cloud hidden"></i>
+                            <!-- cloud  -->
+                            <i class="icon-sun-filled scale-[2] text-yellow-400 anime2 sun hidden"></i>
+                            <!-- snow  -->
+                            <i class="icon-snowflake-o scale-[2] text-blue-300 anime3 snow hidden"></i>
+                            <i class="icon-snow-heavy scale-[2] text-blue-300 anime2 snow hidden"></i>
+                            <i class="icon-snow-heavy-inv scale-[2] text-blue-300 anime4 snow hidden"></i>
+                            <!-- snow  -->
+
+                            <!-- rain  -->
+                            <i class="icon-drizzle scale-[2] text-blue-300 anime3 rain hidden"></i>
+                            <i class="icon-rain-inv scale-[2] text-blue-300 anime4 rain hidden"></i>
+                            <!-- rain  -->
+                        </div>
+
+                        <div class="w-full h-[70%]">
+                            <h4 id="condition" class="text-[14px] text-center pt-4"></h4>
+                            <div class="w-full h-[50%] flex justify-center items-end">
+                                <span class="material-symbols-outlined animate-pulse">
+                                    air
+                                </span>
+                                <h4 id="wind_speed"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/master.js"></script>
+
+</body>
+
+</html>

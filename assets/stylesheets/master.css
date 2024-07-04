@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: margarine;
+    src: url("../font/Margarine-Regular.ttf") format("opentype");
+  }
+
+  @keyframes anime1 {
+    to{
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes anime2 {
+    to{
+      transform: translateX(80px);
+    }
+  }
+
+
+  .anime1{
+    animation: anime1 30s linear infinite;
+  }
+
+  .anime2{
+    animation: anime2 7s linear infinite alternate;
+  }
+  .anime3{
+    animation: anime2 5s linear infinite alternate;
+  }
+  .anime4{
+    animation: anime2 3s linear infinite alternate;
+  }
+
+  
